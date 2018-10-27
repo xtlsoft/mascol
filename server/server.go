@@ -1,6 +1,10 @@
 package server
 
-import "net"
+import (
+	"net"
+
+	"github.com/xtlsoft/mascol/channel"
+)
 
 // Server is the server
 type Server struct {
@@ -22,5 +26,13 @@ func (s *Server) Listen() error {
 		}
 		go HandleConnection(conn, s.Context)
 	}
-	return nil
+}
+
+// New makes a new server
+func New(addr string) *Server {
+	srv := new(Server)
+	srv.Context = new(Context)
+	srv.Context.Channels = make(map[string]*channel.Channel)
+	srv.Address = addr
+	return srv
 }

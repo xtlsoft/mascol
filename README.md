@@ -7,3 +7,7 @@
  / / / / / / /_/ (__  ) /__/ /_/ / /
 /_/ /_/ /_/\__,_/____/\___/\____/_/     Author: xtlsoft
 ```
+
+**Warning: xtlsoft is doing experiments!**
+
+// TODO: change maps to thread-safe maps

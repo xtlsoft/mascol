@@ -27,5 +27,12 @@ Structure:
 (example)
 
 ```json
-{ "cmd": "suscribe", "param": { "name": "test" } }
+{ "cmd": "subscribe", "param": { "name": "test" } }
 ```
+
+### 3.1 Subscribe
+
+Params:
+| Name | Description | Example |
+| ---- | ----------- | ------- |
+| name | The name of the channel | test |
